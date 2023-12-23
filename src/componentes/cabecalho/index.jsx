@@ -3,7 +3,7 @@ import styles from './index.module.css'
 export default function Cabecalho() {
     return (
         <header>
-            <h2>Sistema Agendamento</h2>
+            <h2>Data Pet</h2>
         </header>
     )
 }
