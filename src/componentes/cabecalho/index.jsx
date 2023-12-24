@@ -1,4 +1,4 @@
-import styles from './index.module.css'
+import styles from './cabecalho.module.css'
 
 export default function Cabecalho() {
     return (
