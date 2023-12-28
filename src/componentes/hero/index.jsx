@@ -14,7 +14,7 @@ function Hero() {
           solução de ponta para agendamentos de petshop<br />
         </p>
       </div>
-        <img src={petBg} alt="pet background" />
+      <img src={petBg} alt="pet background" />
     </div>
   )
 }
