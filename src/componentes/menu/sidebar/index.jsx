@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { FaBars } from 'react-icons/fa';
-import styles from './menu.module.css';
+import styles from './menu.module.scss';
 
 export default function Menu() {
   const [menuOpen, setMenuOpen] = useState(false);

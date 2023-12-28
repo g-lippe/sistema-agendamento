@@ -1,5 +1,7 @@
+@import '../../../styles/variaveis.scss';
+
 .menu {
-    background-color: #4f4f4f;
+    background-color: $cor_principal;
     color: #ffffff;
     padding: 25px;
   }
