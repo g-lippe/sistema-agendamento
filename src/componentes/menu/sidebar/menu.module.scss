@@ -1,35 +1,33 @@
 @import '../../../styles/variaveis.scss';
 
 .menu {
-    background-color: $cor_principal;
-    color: #ffffff;
-    padding: 25px;
-  }
-  
-  .header1 {
-    display: inline-flex;
-    align-items: center;
-    padding: 1px;
-    font-size: 15px;
-    flex-direction: row;
-  }
-  
-  .menuIcon {
-    cursor: auto;
-    margin-right: 20px;
-    font-size: 25px;
-    height: 24px;
-  }
-  
-  
-  ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  li {
-    display: flex;
-    margin: 5px;
-    cursor: pointer;
-  }
+  background-color: $cor_principal;
+  color: #ffffff;
+  // padding: 10px;
+  display: inline-flex;
+  align-items: center;
+  font-size: 15px;
+  flex-direction: row;
+  width: 100%;
+}
+
+.menuIcon {
+  cursor: auto;
+  margin: 20px 20px ;
+  font-size: 25px;
+  height: 24px;
+}
+
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  display: flex;
+  margin: 5px;
+  cursor: pointer;
+  color: #343434;
+}
