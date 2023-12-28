@@ -1,4 +1,4 @@
-import Cabecalho from "componentes/cabecalho";
+import Hero from "componentes/hero";
 import Menu from "componentes/menu/sidebar";
 
 export default function HomePage() {
@@ -8,8 +8,9 @@ export default function HomePage() {
         <Menu />
       </div>
       <header className="App-header">
-        <Cabecalho />
+        <Hero />
       </header>
+
     </div>
   );
 }
