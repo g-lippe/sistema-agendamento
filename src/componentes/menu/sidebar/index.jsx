@@ -22,7 +22,7 @@ export default function Menu() {
             </ul>
           )}
         </div>
-        <h3>DataPet</h3>
+        <h3>PetBoard</h3>
       </div>
     </div>
   );
