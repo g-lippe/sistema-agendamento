@@ -1,6 +1,6 @@
 import './App.css';
 import Cabecalho from './componentes/cabecalho';
-import Menu from './componentes/menu/sidebar-hamburguermenu';
+import Menu from './componentes/menu/sidebar';
 
 function App() {
   return (
