@@ -1,4 +1,6 @@
 import styles from './hero.module.scss'
+import petBg from '../../assets/imagens/pet_photo_placeholder.jpg'
+
 
 function Hero() {
   return (
@@ -12,6 +14,7 @@ function Hero() {
           solução de ponta para agendamentos de petshop<br />
         </p>
       </div>
+      <img src={petBg} alt="pet background" />
     </div>
   )
 }
