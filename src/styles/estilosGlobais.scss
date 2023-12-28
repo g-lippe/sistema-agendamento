@@ -1,0 +1,12 @@
+
+
+
+// Estilização da barra de scroll
+::-webkit-scrollbar {
+  width: 8px;
+  // background-color: #161616;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #414141;
+  border-radius: 20px;
+}
