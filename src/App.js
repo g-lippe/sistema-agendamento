@@ -1,18 +1,11 @@
+import HomePage from 'paginas/homePage';
 import './App.css';
 import Cabecalho from './componentes/cabecalho';
 import Menu from './componentes/menu/sidebar';
+import './styles/estilosGlobais.scss';
 
 function App() {
-  return (
-    <div className="App">
-      <div className='content'>
-        <Menu/>
-      </div>
-      <header className="App-header">
-        <Cabecalho/>
-      </header>
-    </div>
-  );
+  return <HomePage />
 }
 
 export default App;
