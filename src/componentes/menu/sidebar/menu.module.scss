@@ -11,13 +11,26 @@
   width: 100%;
 }
 
-.menuIcon {
-  cursor: auto;
-  margin: 20px 20px ;
-  font-size: 25px;
-  height: 24px;
+.header1 {
+  display: inline-flex;
+  font-size: 15px;
+  align-items: center;
+  margin: 10px;
 }
 
+.menuIcon {
+  cursor: auto;
+  align-items: center;
+  margin: 20px ;
+  font-size: 25px;
+  height: 24px;
+  border-radius: 25px;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    box-shadow: 0 0 10px #696969;
+  }
+}
 
 ul {
   list-style: none;
@@ -28,6 +41,7 @@ ul {
 li {
   display: flex;
   margin: 5px;
+  font-size: 15px;
   cursor: pointer;
   color: #343434;
 }
