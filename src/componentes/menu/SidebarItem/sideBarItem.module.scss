@@ -1,0 +1,23 @@
+@import '../../../styles/variaveis.scss';
+
+.Icon-container {
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    cursor: pointer;
+    transition: background-color 0.5s;
+  }
+  
+  .Icon-container:hover {
+    background-color: #0aaadb;
+    border-radius: 10px;
+  }
+  
+  .icon {
+    margin-right: 1px;
+  }
+  
+  .text {
+    font-size: 15px;
+    margin-left: 5px;
+  }

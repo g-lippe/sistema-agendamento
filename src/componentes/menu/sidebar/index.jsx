@@ -1,30 +1,40 @@
+// Sidebar.jsx
 import React, { useState } from 'react';
-import { LuMenuSquare } from "react-icons/lu";
-import styles from './menu.module.scss';
+import { FaBars } from 'react-icons/fa';
+import SidebarItem from '../SidebarItem';
+import styles from './sideBar.module.scss';
 
-export default function Menu() {
-  const [menuOpen, setMenuOpen] = useState(false);
+const Sidebar = () => {
+  const [menuVisible, setMenuVisible] = useState(false);
 
-  const handleMenuClick = () => {
-    setMenuOpen(!menuOpen);
+  const toggleMenu = () => {
+    setMenuVisible(!menuVisible);
   };
 
   return (
-    <div className={styles.menu}>
-      <div className={styles.header1}>
-        <div className={styles.menuIcon} onClick={handleMenuClick}>
-          <LuMenuSquare />
-          {menuOpen && (
-            <ul className={styles.menuItems}>
-              <li>Menu Item 1</li>
-              <li>Menu Item 2</li>
-              <li>Menu Item 3</li>
-            </ul>
-          )}
-        </div>
-        <h3>PetBoard</h3>
+    <div className={styles.sidebar}>
+      <div className={styles.nameContainer}>
+        <FaBars className={styles.sidebarIcon} onClick={toggleMenu} />
+        <h4>PetBoard</h4>
       </div>
+      {menuVisible && (
+        <div className={styles.menu}>
+          <div className={styles.menuItem}>
+            <SidebarItem iconType="início" text="Início" />
+          </div>
+          <div className={styles.menuItem}>
+            <SidebarItem iconType="usuário" text="Usuário" />
+          </div>
+          <div className={styles.menuItem}>
+            <SidebarItem iconType="calendario" text="Calendario" />
+          </div>
+          <div className={styles.menuItem}>
+            <SidebarItem iconType="configurações" text="Configurações" />
+          </div>
+        </div>
+      )}
     </div>
   );
-}
+};
 
+export default Sidebar;

@@ -1,0 +1,55 @@
+@import '../../../styles/variaveis.scss';
+
+.sidebar {
+  display: flex;
+  flex-direction: row;
+  background-color: #333;
+  color: #fff;
+  padding: 5px;
+}
+
+.sidebarIcon {
+  cursor: pointer;
+  font-size: 20px;
+  margin-right: 10px;
+  margin-left: 20px;
+}
+
+.nameContainer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-right: 50px;
+}
+
+h4 {
+  margin-left: 20px;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  margin-top: 8px;
+}
+
+.menuItem {
+  padding: 5px;
+  cursor: pointer;
+  transition: background-color 0.5s;
+}
+
+.menuItem:hover {
+  background-color: #0aaadb;
+  border-radius: 30px;
+  padding: 10px;
+}
+
+.icon {
+  margin-right: 1px;
+}
+
+.text {
+  font-size: 16px;
+  font-weight: bold;
+  margin-left: 10px;
+}
