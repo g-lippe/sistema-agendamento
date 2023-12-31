@@ -17,15 +17,12 @@ const Sidebar = () => {
       <div className={styles.nameContainer}>
         <FaBars className={styles.sidebarIcon} onClick={toggleMenu} />
         <h4>PetBoard</h4>
-      </div>
-      <div className={styles.sidebar__container}>
-        <input 
-        className={styles.sidebar__input}
-        type="text"
-        placeholder="Buscar Aqui"
-        />
+        <div className={styles.sidebar__container}>
+        <input className={styles.sidebar__input} type="text"
+        placeholder="Buscar Aqui" />
         <img src={search} alt='Icone de lupa' />
         </div>
+      </div>
       {menuVisible && (
         <div className={styles.menu}>
           <div className={styles.menuItem}>
