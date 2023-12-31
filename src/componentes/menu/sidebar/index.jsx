@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import { FaBars } from 'react-icons/fa';
 import SidebarItem from '../SidebarItem';
 import styles from './sideBar.module.scss';
+import search from './icons8-lupa-24.png'
 
 const Sidebar = () => {
   const [menuVisible, setMenuVisible] = useState(false);
@@ -17,6 +18,14 @@ const Sidebar = () => {
         <FaBars className={styles.sidebarIcon} onClick={toggleMenu} />
         <h4>PetBoard</h4>
       </div>
+      <div className={styles.sidebar__container}>
+        <input 
+        className={styles.sidebar__input}
+        type="text"
+        placeholder="Buscar Aqui"
+        />
+        <img src={search} alt='Icone de lupa' />
+        </div>
       {menuVisible && (
         <div className={styles.menu}>
           <div className={styles.menuItem}>

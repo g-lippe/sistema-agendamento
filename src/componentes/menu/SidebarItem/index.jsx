@@ -1,5 +1,5 @@
 import { React } from "react";
-import { FaHome, FaUser, FaCalendar, FaCog } from "react-icons/fa";
+import { FcHome, FcButtingIn, FcCalendar, FcSettings } from "react-icons/fc";
 import styles from './sideBarItem.module.scss'
 
 const SidebarItem = ({ iconType, text }) => {
@@ -7,16 +7,16 @@ const SidebarItem = ({ iconType, text }) => {
 
     switch (iconType) {
         case "início":
-          IconComponent = FaHome;
+          IconComponent = FcHome;
           break;
         case "usuário":
-          IconComponent = FaUser;
+          IconComponent = FcButtingIn;
           break;
         case "calendario":
-          IconComponent = FaCalendar;
+          IconComponent = FcCalendar;
           break;
         case "configurações":
-          IconComponent = FaCog;
+          IconComponent = FcSettings;
           break;
         default:
           IconComponent = null;
