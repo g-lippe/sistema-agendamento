@@ -3,7 +3,8 @@ import React, { useState } from 'react';
 import { FaBars } from 'react-icons/fa';
 import SidebarItem from '../SidebarItem';
 import styles from './sideBar.module.scss';
-import search from './icons8-lupa-24.png'
+import search from './icons8-lupa-24.png';
+import logoImage from './favicon.png'
 
 const Sidebar = () => {
   const [menuVisible, setMenuVisible] = useState(false);
@@ -16,6 +17,7 @@ const Sidebar = () => {
     <div className={styles.sidebar}>
       <div className={styles.nameContainer}>
         <FaBars className={styles.sidebarIcon} onClick={toggleMenu} />
+        <img src={logoImage} alt='Logo do Projeto' className='{styles.logoImage}'/>
         <h4>PetBoard</h4>
         <div className={styles.sidebar__container}>
         <input className={styles.sidebar__input} type="text"
