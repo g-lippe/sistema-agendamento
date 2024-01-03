@@ -1,10 +1,10 @@
 // Sidebar.jsx
-import React, { useState } from 'react';
-import { FaBars } from 'react-icons/fa';
-import SidebarItem from '../SidebarItem';
-import styles from './sideBar.module.scss';
-import search from './icons8-lupa-24.png';
-import logoImage from './favicon.png'
+import React, { useState } from "react";
+import { CiMenuBurger } from "react-icons/ci";
+import SidebarItem from "../SidebarItem";
+import styles from "./sideBar.module.scss";
+import search from "./icons8-lupa-24.png";
+import logoImage from "./favicon.png";
 
 const Sidebar = () => {
   const [menuVisible, setMenuVisible] = useState(false);
@@ -16,13 +16,20 @@ const Sidebar = () => {
   return (
     <div className={styles.sidebar}>
       <div className={styles.nameContainer}>
-        <FaBars className={styles.sidebarIcon} onClick={toggleMenu} />
-        <img src={logoImage} alt='Logo do Projeto' className='{styles.logoImage}'/>
+        <CiMenuBurger className={styles.sidebarIcon} onClick={toggleMenu} />
+        <img
+          src={logoImage}
+          alt="Logo do Projeto"
+          className="{styles.logoImage}"
+        />
         <h4>PetBoard</h4>
         <div className={styles.sidebar__container}>
-        <input className={styles.sidebar__input} type="text"
-        placeholder="Buscar Aqui" />
-        <img src={search} alt='Icone de lupa' />
+          <input
+            className={styles.sidebar__input}
+            type="text"
+            placeholder="Buscar Aqui"
+          />
+          <img src={search} alt="Icone de lupa" />
         </div>
       </div>
       {menuVisible && (

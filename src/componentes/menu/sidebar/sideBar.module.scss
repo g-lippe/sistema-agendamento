@@ -1,8 +1,8 @@
-@import '../../../styles/variaveis.scss';
+@import "../../../styles/variaveis.scss";
 
 .sidebar {
   display: flex;
-  flex-direction: column ;
+  flex-direction: column;
   background-color: #333;
   color: #fff;
   padding: 1px;
@@ -11,45 +11,58 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
-    background-color: solid transparent;
+    padding: 6px 10px;
+    width: 33%;
     position: relative;
-    width: 40%;
     z-index: 0;
-    margin-left: 850px;
+    margin-left: 750px;
 
     &::before {
-        content: "";
-        position: absolute;
-        inset: 0;
-        border-radius: 20px;
-        z-index: -1;
-        border: 10px solid transparent;
-        background: linear-gradient(to right, #000000, #0aaadb) border-box;
+      content: "";
+      position: absolute;
+      inset: 0;
+      border-radius: 10px;
+      z-index: -1;
+      border: 2px solid transparent;
+      background: linear-gradient(to right, #050505, #0aaadb) border-box;
+      -webkit-mask: linear-gradient(#fff 0 0) padding-box,
+        linear-gradient(#fff 0 0);
+      -webkit-mask-composite: xor;
+      mask-composite: exclude;
+    }
+  }
 
+  &__input {
+    width: 80%;
+    height: 30px;
+    color: #d9d9d9;
+    font-size: 1rem;
+    border: none;
+    background-color: transparent;
+    outline: 0;
+
+    &::placeholder {
+      font-size: 1rem;
     }
-    
-    &__input {
-      width: 80%;
-      height: 100%;
-      color: #fdfdfd;
-      font-size: 10rem;
-      font-family:'Courier New', Courier, monospace;
-      border: none;
-    
-      &::placeholder {
-        font-size: 1rem;
-      }
-    }
-  }  
+  }
+
+  img {
+    cursor: pointer;
+  }
 }
 
 .sidebarIcon {
   cursor: pointer;
-  font-size: 40px;
+  font-size: 35px;
   margin-right: 20px;
   margin-left: 20px;
   transition: background 0.3s ease;
+}
+
+.sidebarIcon:hover {
+  background-color: transparent;
+  border-radius: 30px;
+  box-shadow: 1px 1px 10px #0aaadb;
 }
 
 .nameContainer {

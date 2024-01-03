@@ -4,7 +4,7 @@ import Menu from "componentes/menu/Sidebar";
 export default function HomePage() {
   return (
     <div className="App">
-      <header >
+      <header>
         <Menu />
       </header>
       <Hero />
