@@ -1,5 +1,6 @@
 import Hero from "componentes/hero";
 import Menu from "componentes/menu/Sidebar";
+import Rodape from "componentes/rodape";
 
 export default function HomePage() {
   return (
@@ -8,6 +9,7 @@ export default function HomePage() {
         <Menu />
       </header>
       <Hero />
+      <Rodape />
     </div>
   );
 }

@@ -4,7 +4,7 @@ import { CiMenuBurger } from "react-icons/ci";
 import SidebarItem from "../SidebarItem";
 import styles from "./sideBar.module.scss";
 import search from "./icons8-lupa-24.png";
-import logoImage from "./favicon.png";
+import { GiSittingDog } from "react-icons/gi";
 
 const Sidebar = () => {
   const [menuVisible, setMenuVisible] = useState(false);
@@ -17,11 +17,7 @@ const Sidebar = () => {
     <div className={styles.sidebar}>
       <div className={styles.nameContainer}>
         <CiMenuBurger className={styles.sidebarIcon} onClick={toggleMenu} />
-        <img
-          src={logoImage}
-          alt="Logo do Projeto"
-          className="{styles.logoImage}"
-        />
+        <GiSittingDog className={styles.logoIcon} />
         <h4>PetBoard</h4>
         <div className={styles.sidebar__container}>
           <input

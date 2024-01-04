@@ -1,4 +1,4 @@
-import { React } from "react";
+import React from "react";
 import { FcHome, FcButtingIn, FcCalendar, FcSettings } from "react-icons/fc";
 import styles from "./sideBarItem.module.scss";
 
