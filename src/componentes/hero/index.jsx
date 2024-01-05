@@ -11,7 +11,7 @@ function Hero() {
           <span className={styles.destaque}>sem sair de casa</span>
         </h2>
         <p>
-          solução de ponta para agendamentos de petshop
+          solução prática e simples para agendamentos de petshop
           <br />
         </p>
       </div>

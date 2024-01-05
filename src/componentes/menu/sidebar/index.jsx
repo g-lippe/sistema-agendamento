@@ -18,7 +18,7 @@ const Sidebar = () => {
       <div className={styles.nameContainer}>
         <CiMenuBurger className={styles.sidebarIcon} onClick={toggleMenu} />
         <GiSittingDog className={styles.logoIcon} />
-        <h4>PetBoard</h4>
+        <h4>DataPet</h4>
         <div className={styles.sidebar__container}>
           <input
             className={styles.sidebar__input}
