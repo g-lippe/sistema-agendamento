@@ -4,12 +4,16 @@ import Rodape from "componentes/rodape";
 
 export default function HomePage() {
   return (
-    <div className="App">
-      <header>
-        <Menu />
-      </header>
-      <Hero />
-      <Rodape />
-    </div>
+    <>
+      <main>
+        <div className="App">
+          <header>
+            <Menu />
+          </header>
+          <Hero />
+        </div>
+        <Rodape />
+      </main>
+    </>
   );
 }

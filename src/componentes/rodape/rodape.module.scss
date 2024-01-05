@@ -1,38 +1,48 @@
 @import "../../styles/variaveis.scss";
 
 footer {
+  display: flex;
   position: fixed;
+  padding: 0px 24px;
   bottom: 0;
-  left: 0;
-  width: 100%;
-  background-color: #ffffff;
-  padding: 10px;
   height: 60px;
-}
+  width: 100%;
+  background-color: #444;
+  box-sizing: border-box;
 
-p {
-  color: rgb(0, 0, 0);
-  font-size: 10px;
-  margin-top: 1px;
-}
+  p {
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    margin-top: 15px;
+    margin-left: 800px;
+  }
 
-.facebookLogo {
-  font-size: 30px;
-  margin-right: 10px;
-  margin-left: 10px;
-  margin-bottom: 50px;
-}
+  .icons {
+    display: flex;
+    margin-right: 5px;
+  }
 
-.instagramLogo {
-  font-size: 30px;
-  margin-right: 10px;
-  margin-left: 10px;
-  margin-bottom: 50px;
-}
+  .facebookLogo {
+    color: white;
+    font-size: 30px;
+    margin-top: 15px;
+    margin-left: 1px;
+    margin-right: 10px;
+  }
 
-.whatsappLogo {
-  font-size: 30px;
-  margin-right: 10px;
-  margin-left: 10px;
-  margin-bottom: 50px;
+  .instagramLogo {
+    color: white;
+    font-size: 30px;
+    margin-top: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .whatsappLogo {
+    color: white;
+    font-size: 30px;
+    margin-top: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
 }

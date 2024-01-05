@@ -3,17 +3,23 @@ import styles from "./rodape.module.scss";
 import { FaFacebook } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaWhatsapp } from "react-icons/fa";
-import { BrowserRouter } from "react-router-dom";
-import { Link } from "react-router-dom";
 
 const Rodape = () => {
   return (
-    <footer>
-      <p>Nossas redes sociais abaixo:</p>
-      <FaFacebook className={styles.facebookLogo} />
-      <FaInstagram className={styles.instagramLogo} />
-      <FaWhatsapp className={styles.whatsappLogo} />
-    </footer>
+    <>
+      <footer>
+        <div className={styles.icons}>
+          <FaFacebook className={styles.facebookLogo} />
+        </div>
+        <div className={styles.icons}>
+          <FaInstagram className={styles.instagramLogo} />
+        </div>
+        <div className={styles.icons}>
+          <FaWhatsapp className={styles.whatsappLogo} />
+        </div>
+        <p>Desenvolvido com React</p>
+      </footer>
+    </>
   );
 };
 
