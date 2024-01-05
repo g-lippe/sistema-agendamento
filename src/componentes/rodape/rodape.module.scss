@@ -1,34 +1,38 @@
 @import "../../styles/variaveis.scss";
 
 footer {
-  background-color: #444;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #ffffff;
   padding: 10px;
+  height: 60px;
 }
 
 p {
-  color: white;
+  color: rgb(0, 0, 0);
+  font-size: 10px;
+  margin-top: 1px;
 }
 
 .facebookLogo {
-  color: white;
   font-size: 30px;
   margin-right: 10px;
   margin-left: 10px;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
 }
 
 .instagramLogo {
-  color: white;
   font-size: 30px;
   margin-right: 10px;
   margin-left: 10px;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
 }
 
 .whatsappLogo {
-  color: white;
   font-size: 30px;
   margin-right: 10px;
   margin-left: 10px;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
 }
