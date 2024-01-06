@@ -1,6 +1,7 @@
-import Hero from "componentes/hero";
+import Hero from "paginas/homePage/hero";
 import Menu from "componentes/menu/Sidebar";
 import Rodape from "componentes/rodape";
+import Detalhes from "./detalhes";
 
 export default function HomePage() {
   return (
@@ -10,7 +11,9 @@ export default function HomePage() {
           <header>
             <Menu />
           </header>
+          
           <Hero />
+          <Detalhes />
         </div>
         <Rodape />
       </main>
