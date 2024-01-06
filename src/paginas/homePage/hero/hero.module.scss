@@ -1,19 +1,28 @@
-@import "../../styles/variaveis";
+@import "../../../styles/variaveis";
 
 .banner {
   width: 100%;
   height: 800px;
   display: flex;
+  justify-content: space-between;
   align-items: center;
   z-index: 1;
 
-  img {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    object-fit: cover;
-    z-index: -1;
-    opacity: 25%;
+
+  .hero_img {
+    color: white;
+    margin-right: 110px;
+    width: 38%;
+    padding: 38px;
+
+    img {
+      /* or any custom size */
+      object-fit: contain;
+      width: 100%;
+      height: 100%;
+      border-radius: 14px;
+    }
+
   }
 
   .hero_text {
@@ -37,7 +46,7 @@
     }
 
     .destaque {
-      background: #0aaadb;
+      background: $app_a;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     }
