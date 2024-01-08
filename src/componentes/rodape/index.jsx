@@ -9,13 +9,19 @@ const Rodape = () => {
     <>
       <footer>
         <div className={styles.icons}>
-          <FaFacebook className={styles.facebookLogo} />
+          <a href="https://react.dev" target="_blank" rel="noopener noreferrer">
+            <FaFacebook className={styles.facebookLogo} />
+          </a>
         </div>
         <div className={styles.icons}>
-          <FaInstagram className={styles.instagramLogo} />
+          <a href="https://react.dev" target="_blank" rel="noopener noreferrer">
+            <FaInstagram className={styles.instagramLogo} />
+          </a>
         </div>
         <div className={styles.icons}>
-          <FaWhatsapp className={styles.whatsappLogo} />
+          <a href="https://react.dev" target="_blank" rel="noopener noreferrer">
+            <FaWhatsapp className={styles.whatsappLogo} />
+          </a>
         </div>
         <p>Desenvolvido com React</p>
       </footer>
