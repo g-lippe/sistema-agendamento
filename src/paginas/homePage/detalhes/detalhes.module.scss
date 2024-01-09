@@ -9,21 +9,20 @@
   background-color: $app_a;
   color: #fff;
 
-
   h2 {
     margin: auto;
   }
+}
 
-
+h1 {
+  margin-left: 10px;
 }
 
 .containerCards {
-  
   display: flex;
   align-items: center;
   justify-content: space-around;
   text-align: center;
-
 
   .cardMotivo {
     width: 500px;
@@ -31,6 +30,6 @@
     border-radius: 20px;
     padding: 25px;
     background-color: rgba(#39d4fa, 10%);
-    vertical-align: baseline
+    vertical-align: baseline;
   }
 }
