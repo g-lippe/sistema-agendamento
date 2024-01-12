@@ -7,15 +7,15 @@ export default function HomePage() {
   return (
     <>
       <main>
-        <div className="App">
+        <Menu />
+        <div className='pagina_centro'>
           <header>
-            <Menu />
           </header>
-          
+
           <Hero />
           <Detalhes />
         </div>
-        <Rodape />
+        {/* <Rodape /> */}
       </main>
     </>
   );

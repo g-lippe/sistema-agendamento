@@ -8,28 +8,53 @@
   text-align: center;
   background-color: $app_a;
   color: #fff;
+  border-radius: $raio_borda_a;
 
   h2 {
     margin: auto;
   }
 }
 
-h1 {
-  margin-left: 10px;
+
+
+.porque {
+  h1 {
+    text-align: center;
+    font-size: 45px;
+  }
+  .containerCards {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  
+    h3 {
+      font-size: 30px;
+      text-align: center;
+    }
+  
+    .cardMotivo {
+      width: 500px;
+      height: 200px;
+      border-radius: $raio_borda_a;
+      padding: 25px;
+      background-color: rgba(#39d4fa, 12%);
+      vertical-align: baseline;
+      margin-bottom: 20px;
+  
+      p {
+        font-size: 17px;
+      }
+  
+    }
+  }
+
 }
 
-.containerCards {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  text-align: center;
 
-  .cardMotivo {
-    width: 500px;
-    height: 200px;
-    border-radius: 20px;
-    padding: 25px;
-    background-color: rgba(#39d4fa, 10%);
-    vertical-align: baseline;
-  }
+
+.como {
+  background-color: rgba($app_b, 12%);
+  border-radius: $raio_borda_a;
+  padding: 25px;
+
 }
