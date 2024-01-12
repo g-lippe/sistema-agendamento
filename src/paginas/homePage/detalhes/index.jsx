@@ -40,7 +40,10 @@ function Detalhes() {
         </div>
 
         <div className={styles.como_right}>
-
+          <p>Comece pesquisando por um estabelecimento</p>
+          <p>Escolha que tipo de serviço deseja agendar</p>
+          <p>Selecione um dos horários disponíveis</p>
+          <p>Agende seu horário!</p>
         </div>
 
       </div>

@@ -22,16 +22,17 @@
     text-align: center;
     font-size: 45px;
   }
+
   .containerCards {
     display: flex;
     align-items: center;
     justify-content: space-between;
-  
+
     h3 {
       font-size: 30px;
       text-align: center;
     }
-  
+
     .cardMotivo {
       width: 500px;
       height: 200px;
@@ -40,11 +41,11 @@
       background-color: rgba(#39d4fa, 12%);
       vertical-align: baseline;
       margin-bottom: 20px;
-  
+
       p {
         font-size: 17px;
       }
-  
+
     }
   }
 
@@ -56,5 +57,26 @@
   background-color: rgba($app_b, 12%);
   border-radius: $raio_borda_a;
   padding: 25px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  .como_left {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .como_right {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 70%;
+    gap: 10px;
+
+    p::before {
+      content: '⭐ ';
+    }
+
+  }
 
 }
