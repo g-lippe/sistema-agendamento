@@ -11,9 +11,7 @@
 
   .hero_img {
     color: white;
-    margin-right: 110px;
     width: 38%;
-    padding: 38px;
 
     img {
       /* or any custom size */
@@ -26,6 +24,7 @@
   }
 
   .hero_text {
+    text-align: left;
     color: #242424;
     padding: 20px;
     margin-left: 110px;
