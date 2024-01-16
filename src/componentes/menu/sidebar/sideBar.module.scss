@@ -54,19 +54,25 @@
 .sidebarIcon {
   cursor: pointer;
   font-size: 35px;
+  border-radius: 20px;
   margin-right: 20px;
   margin-left: 20px;
   transition: background 0.3s ease;
 }
 
-.sidebarIcon:hover {
-  background-color: transparent;
-  border-radius: 30px;
-  box-shadow: 1px 1px 10px #0aaadb;
+.closeIcon {
+  cursor: pointer;
+  font-size: 35px;
+  border-radius: 20px;
+  margin-right: 20px;
+  margin-left: 20px;
+  transition: background 0.3s ease;
 }
 
 .logoIcon {
   font-size: 50px;
+  border-radius: 20px;
+  cursor: pointer;
 }
 
 .nameContainer {
