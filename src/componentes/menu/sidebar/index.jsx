@@ -46,23 +46,23 @@ const Sidebar = () => {
       {menuVisible && (
         <div className={styles.menu}>
           <div className={styles.menuItem}>
-            <SidebarItem iconType="início" text="Início" to="/" />
+            <SidebarItem iconType="início" text="Início" to="/inicio" />
           </div>
           <div className={styles.menuItem}>
-            <SidebarItem iconType="usuário" text="Usuário" to="loginPage" />
+            <SidebarItem iconType="usuário" text="Usuário" to="/loginPage" />
           </div>
           <div className={styles.menuItem}>
             <SidebarItem
               iconType="calendario"
               text="Calendario"
-              to="Calendar"
+              to="/calendar"
             />
           </div>
           <div className={styles.menuItem}>
             <SidebarItem
               iconType="configurações"
               text="Configurações"
-              to="settings"
+              to="/settings"
             />
           </div>
         </div>

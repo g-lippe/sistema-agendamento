@@ -25,10 +25,10 @@ const SidebarItem = ({ iconType, text, to }) => {
 
   return (
     <div to={to} className={styles["Icon-container"]}>
-      <Link to={to}>
+      <Link to={to} className={styles.link}>
         {IconComponent && <IconComponent className={styles.icon} />}
+        <span className={styles.text}>{text}</span>
       </Link>
-      <span className={styles.text}>{text}</span>
     </div>
   );
 };

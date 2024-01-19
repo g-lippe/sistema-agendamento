@@ -11,17 +11,6 @@ import Calendar from './componentes/routes/calendar';
 import Settings from './componentes/routes/settings'
 import ErrorPage from './componentes/routes/errorPage';
 
-// const router = createBrowserRouter([
-//   {
-//     path: "/",
-//     element: <Home/>
-//   },
-//   {
-//     path: "loginPage",
-//     element: <LoginPage/>
-//   },
-// ]);
-
 const router = createBrowserRouter([
   {
     path: "/",
@@ -33,15 +22,15 @@ const router = createBrowserRouter([
         element: <Home/>
       },
       {
-        path: "loginPage",
+        path: "/loginPage",
         element: <LoginPage/>
       },
       {
-        path: "calendar",
+        path: "/calendar",
         element: <Calendar/>
       },
       {
-        path: "settings",
+        path: "/settings",
         element: <Settings/>
       },
     ]
