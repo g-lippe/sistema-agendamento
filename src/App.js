@@ -1,17 +1,27 @@
-import HomePage from 'paginas/homePage';
-import './styles/estilosGlobais.scss';
+import React from "react";
+import { BrowserRouter as Router, Route, Routes} from "react-router-dom";
+import PaginaInicio from "./PaginaInicio";
+import PaginaUsuario from "./PaginaUsuario";
+import PaginaCalendario from "./PaginaCalendario";
+import PaginaConfiguracoes from "./PaginaConfiguracoes";
+import HomePage from "./paginas/HomePage"; 
+import Navbar from "./componentes/NavBar";
 
-import { Outlet } from 'react-router-dom';
-import Navbar from 'componentes/navBar';
-
-function App() {
+const App = () => {
   return (
-    <div className='App'>
-      <Navbar />
-      <HomePage />
-      <Outlet />
-  </div>
-  )
-}
+    <Router>
+      <div>
+        <Navbar />
+        <Routes>
+          <Route path="/inicio" element={<PaginaInicio/>} />
+          <Route path="/usuario" element={<PaginaUsuario/>} />
+          <Route path="/calendario" element={<PaginaCalendario/>} />
+          <Route path="/configuracoes" element={<PaginaConfiguracoes/>} />
+        </Routes>
+        <HomePage />
+      </div>
+    </Router>
+  );
+};
 
 export default App;

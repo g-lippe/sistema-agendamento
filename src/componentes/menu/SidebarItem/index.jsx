@@ -1,8 +1,9 @@
 import React from "react";
 import { FcHome, FcButtingIn, FcCalendar, FcSettings } from "react-icons/fc";
 import styles from "./sideBarItem.module.scss";
+import { Link } from "react-router-dom";
 
-const SidebarItem = ({ iconType, text }) => {
+const SidebarItem = ({ iconType, text, to }) => {
   let IconComponent;
 
   switch (iconType) {
@@ -23,8 +24,10 @@ const SidebarItem = ({ iconType, text }) => {
   }
 
   return (
-    <div className={styles["Icon-container"]}>
-      {IconComponent && <IconComponent className={styles.icon} />}
+    <div to={to} className={styles["Icon-container"]}>
+      <Link to={to}>
+        {IconComponent && <IconComponent className={styles.icon} />}
+      </Link>
       <span className={styles.text}>{text}</span>
     </div>
   );

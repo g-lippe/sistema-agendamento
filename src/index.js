@@ -6,8 +6,10 @@ import App from './App';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
 import Home from './componentes/routes/home';
-import Contact from './componentes/routes/contact';
-import ErrorPage from './componentes/routes/errorPage'
+import LoginPage from './componentes/routes/loginPage';
+import Calendar from './componentes/routes/calendar';
+import Settings from './componentes/routes/settings'
+import ErrorPage from './componentes/routes/errorPage';
 
 // const router = createBrowserRouter([
 //   {
@@ -15,8 +17,8 @@ import ErrorPage from './componentes/routes/errorPage'
 //     element: <Home/>
 //   },
 //   {
-//     path: "contact",
-//     element: <Contact/>
+//     path: "loginPage",
+//     element: <LoginPage/>
 //   },
 // ]);
 
@@ -31,8 +33,16 @@ const router = createBrowserRouter([
         element: <Home/>
       },
       {
-        path: "contact",
-        element: <Contact/>
+        path: "loginPage",
+        element: <LoginPage/>
+      },
+      {
+        path: "calendar",
+        element: <Calendar/>
+      },
+      {
+        path: "settings",
+        element: <Settings/>
       },
     ]
   },
