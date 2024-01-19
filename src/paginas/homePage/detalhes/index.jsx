@@ -3,7 +3,7 @@ import styles from './detalhes.module.scss'
 
 function Detalhes() {
   return (
-    <section className={styles.seção}>
+    <section>
 
       <div className={styles.faixa} style={{ backgroundImage: 'url(/imagens/fundo_pet.png)' }}>
         <h2>
@@ -35,15 +35,15 @@ function Detalhes() {
 
       <div className={styles.como}>
         <div className={styles.como_left}>
-          <h2>Mas como funciona?</h2>
+          <h3>Mas como funciona?</h3>
           <p>Agende um atendimento para seu pet em 4 passos</p>
         </div>
 
         <div className={styles.como_right}>
-          <p>Comece pesquisando por um estabelecimento</p>
-          <p>Escolha que tipo de serviço deseja agendar</p>
-          <p>Selecione um dos horários disponíveis</p>
-          <p>Agende seu horário!</p>
+          <p>🔍 Comece pesquisando por um estabelecimento</p>
+          <p>🛎️ Escolha que tipo de serviço deseja agendar</p>
+          <p>📆 Selecione um dos horários disponíveis</p>
+          <p>✅ Agende seu horário!</p>
         </div>
 
       </div>
