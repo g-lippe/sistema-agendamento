@@ -33,17 +33,17 @@ function Detalhes() {
         </div>
       </div>
 
-      <div className={styles.como}>
+      <div className={styles.como + ' animate'}>
         <div className={styles.como_left}>
           <h3>Mas como funciona?</h3>
           <p>Agende um atendimento para seu pet em 4 passos</p>
         </div>
 
         <div className={styles.como_right}>
-          <p>🔍 Comece pesquisando por um estabelecimento</p>
-          <p>🛎️ Escolha que tipo de serviço deseja agendar</p>
-          <p>📆 Selecione um dos horários disponíveis</p>
-          <p>✅ Agende seu horário!</p>
+          <p><strong>1 </strong> 🔍 Pesquise um estabelecimento</p>
+          <p><strong>2 </strong> 🛎️ Escolha que tipo de serviço deseja agendar</p>
+          <p><strong>3 </strong> 📆 Selecione um dos horários disponíveis</p>
+          <p><strong>4 </strong> ✅ Agende seu horário!</p>
         </div>
 
       </div>

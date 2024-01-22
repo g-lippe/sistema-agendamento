@@ -6,8 +6,8 @@ import TelaLogin from "paginas/login";
 const App = () => {
   return (
     <div>
-      {/* <HomePage /> */}
-      <TelaLogin />
+      <HomePage />
+      {/* <TelaLogin /> */}
     </div>
   );
 };
