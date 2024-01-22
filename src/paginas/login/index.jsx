@@ -16,7 +16,14 @@ export default function TelaLogin() {
 
         <button>Entrar</button>
 
+
       </div>
+
+      <div className={styles.cont_criarConta}>
+        
+        <p>Não tem uma conta? <span><a href="">Criar uma agora</a></span> </p> 
+      </div>
+
 
     </div>
   )
