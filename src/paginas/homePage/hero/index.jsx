@@ -1,5 +1,5 @@
 import styles from "./hero.module.scss";
-import petBg from "../../../assets/imagens/pet_photo_placeholder.jpg";
+import petBg from "../../../assets/imagens/hero_img_upscaled.jpeg";
 
 function Hero() {
   return (
