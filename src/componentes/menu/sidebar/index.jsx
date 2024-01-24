@@ -1,4 +1,3 @@
-// Sidebar.jsx
 import React, { useState } from "react";
 import { CiMenuBurger } from "react-icons/ci";
 import { IoCloseSharp } from "react-icons/io5";
@@ -49,7 +48,7 @@ const Sidebar = () => {
             <SidebarItem iconType="início" text="Início" to="/inicio" />
           </div>
           <div className={styles.menuItem}>
-            <SidebarItem iconType="usuário" text="Usuário" to="/loginPage" />
+            <SidebarItem iconType="usuário" text="Usuário" to="/login" />
           </div>
           <div className={styles.menuItem}>
             <SidebarItem

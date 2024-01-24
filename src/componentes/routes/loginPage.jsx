@@ -1,11 +1,12 @@
 import React from "react";
+import TelaLogin from "paginas/login";
 
-const loginPage = () => {
+const LoginPage = () => {
   return (
-    <div>
-      <h1>Pagina de Login</h1>
-    </div>
+    <nav>
+      <TelaLogin />
+    </nav>
   );
 };
 
-export default loginPage;
+export default LoginPage;
