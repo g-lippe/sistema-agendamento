@@ -42,18 +42,10 @@ function Detalhes() {
         </div>
 
         <div className={styles.como_right}>
-          <p>
-            <strong>1 </strong> 🔍 Pesquise um estabelecimento
-          </p>
-          <p>
-            <strong>2 </strong> 🛎️ Escolha que tipo de serviço deseja agendar
-          </p>
-          <p>
-            <strong>3 </strong> 📆 Selecione um dos horários disponíveis
-          </p>
-          <p>
-            <strong>4 </strong> ✅ Agende seu horário!
-          </p>
+          <p> <strong> 1 </strong> 🔍 Pesquise um estabelecimento </p>
+          <p> <strong> 2 </strong> 🛎️ Escolha que tipo de serviço deseja agendar </p>
+          <p> <strong> 3 </strong> 📆 Selecione um dos horários disponíveis </p>
+          <p> <strong> 4 </strong> ✅ Agende seu horário! </p>
         </div>
       </div>
     </section>

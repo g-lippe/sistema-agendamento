@@ -44,7 +44,6 @@
       background-color: rgba(#39d4fa, 12%);
       vertical-align: baseline;
       margin-bottom: 50px;
-      margin-inline: 10px;
       text-align: center;
 
 
@@ -76,7 +75,7 @@
     }
 
     p {
-      font-size: 22px;
+      font-size: 20px;
       font-family: $font-light;
     }
   }
@@ -86,16 +85,15 @@
   }
 
   .como_right {
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 50%;
-    display: grid;
-    grid-template-columns: auto auto;
+    // flex-direction: row;
+    // flex-wrap: wrap;
+    // width: 50%;
+    // display: grid;
+    // grid-template-columns: auto auto;
     margin: auto;
 
     p {
-      font-size: 16px;
-      padding: 4px;
+      font-size: 18px;
     }
   }
 }
