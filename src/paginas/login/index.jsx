@@ -1,11 +1,12 @@
-import styles from './login.module.scss'
-
+import styles from "./login.module.scss";
 
 export default function TelaLogin() {
   return (
     <div className={styles.cont_principal}>
+      <div className={styles.voltar}>
+        <button>Voltar</button>
+      </div>
       <h2>Faça login no DataPet</h2>
-
       <div className={styles.cont_inputs}>
         <label htmlFor="">Endereço de email</label>
         <input className={styles.input_mail} type="text" />
@@ -15,16 +16,16 @@ export default function TelaLogin() {
         <a href="">Esqueceu a senha?</a>
 
         <button>Entrar</button>
-
-
       </div>
 
       <div className={styles.cont_criarConta}>
-        
-        <p>Não tem uma conta? <span><a href="">Criar uma agora</a></span> </p> 
+        <p>
+          Não tem uma conta?{" "}
+          <span>
+            <a href="">Criar uma agora</a>
+          </span>{" "}
+        </p>
       </div>
-
-
     </div>
-  )
+  );
 }

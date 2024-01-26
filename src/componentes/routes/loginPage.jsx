@@ -3,9 +3,9 @@ import TelaLogin from "paginas/login";
 
 const LoginPage = () => {
   return (
-    <nav>
+    <div>
       <TelaLogin />
-    </nav>
+    </div>
   );
 };
 

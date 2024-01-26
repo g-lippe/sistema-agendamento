@@ -1,10 +1,12 @@
 @import "../../styles/variaveis.scss";
 
-
 .cont_principal {
-  margin-top: 200px;
+  margin-top: 100px;
 }
 
+.voltar {
+  border: none;
+}
 
 h2 {
   text-align: center;
@@ -22,7 +24,6 @@ h2 {
   padding: 8px 30px;
   font-size: 20px;
 }
-
 
 .cont_inputs {
   border-radius: $raio_borda_a;
@@ -45,7 +46,6 @@ h2 {
     font-size: 20px;
     border-radius: 5px;
     border-color: #0000003a;
-
   }
 
   a {
@@ -57,6 +57,4 @@ h2 {
     background-color: $app_a;
     color: #fff;
   }
-
-
 }

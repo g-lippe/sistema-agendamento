@@ -8,14 +8,13 @@ export default function HomePage() {
     <>
       <main>
         <Menu />
-        <div className='pagina_centro'>
-          <header>
-          </header>
+        <div className="pagina_centro">
+          <header></header>
 
           <Hero />
           <Detalhes />
         </div>
-        {/* <Rodape /> */}
+        {<Rodape />}
       </main>
     </>
   );

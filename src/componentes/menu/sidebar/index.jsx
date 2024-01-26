@@ -45,7 +45,7 @@ const Sidebar = () => {
       {menuVisible && (
         <div className={styles.menu}>
           <div className={styles.menuItem}>
-            <SidebarItem iconType="início" text="Início" to="/inicio" />
+            <SidebarItem iconType="início" text="Início" to="/home" />
           </div>
           <div className={styles.menuItem}>
             <SidebarItem iconType="usuário" text="Usuário" to="/login" />
