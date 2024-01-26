@@ -1,9 +1,12 @@
+@import "./variaveis.scss";
+
 .pagina_centro {
   margin: 0px 14%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   gap: 20px;
+  font-family: $font-default;
 }
 
 .hover_shadow {
@@ -26,6 +29,39 @@
 ::-webkit-scrollbar-thumb {
   background-color: #414141;
   border-radius: 20px;
+}
+
+
+@font-face {
+  font-family: "PoppinsRegular";
+  src: local("PoppinsRegular"),
+    url("../assets/fontes/Poppins-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PoppinsLight";
+  src: local("PoppinsLight"),
+    url("../assets/fontes/Poppins-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PoppinsItalic";
+  src: local("PoppinsItalic"),
+    url("../assets/fontes/Poppins-Italic.ttf") format("truetype");
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PoppinsBold";
+  src: local("PoppinsBold"),
+    url("../assets/fontes/Poppins-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-display: swap;
 }
 
 button {
