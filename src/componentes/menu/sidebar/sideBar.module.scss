@@ -1,115 +1,52 @@
 @import "../../../styles/variaveis.scss";
 
-.sidebar {
-  display: flex;
-  flex-direction: column;
-  background-color: #333;
-  color: #fff;
-  padding: 1px;
-
-  &__container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 6px 10px;
-    width: 33%;
-    position: relative;
-    z-index: 0;
-    margin-left: 750px;
-
-    &::before {
-      content: "";
-      position: absolute;
-      inset: 0;
-      border-radius: 10px;
-      z-index: -1;
-      border: 2px solid transparent;
-      background: linear-gradient(to right, #050505, #0aaadb) border-box;
-      -webkit-mask: linear-gradient(#fff 0 0) padding-box,
-        linear-gradient(#fff 0 0);
-      -webkit-mask-composite: xor;
-      mask-composite: exclude;
-    }
-  }
-
-  &__input {
-    width: 80%;
-    height: 20px;
-    color: #d9d9d9;
-    font-size: 1rem;
-    border: none;
-    background-color: transparent;
-    outline: 0;
-
-    &::placeholder {
-      font-size: 1rem;
-    }
-  }
-
-  img {
-    cursor: pointer;
-  }
-}
-
-.sidebarIcon {
-  cursor: pointer;
-  font-size: 35px;
-  border-radius: 20px;
-  margin-right: 20px;
-  margin-left: 20px;
-  transition: background 0.3s ease;
-}
-
-.closeIcon {
-  cursor: pointer;
-  font-size: 35px;
-  border-radius: 20px;
-  margin-right: 20px;
-  margin-left: 20px;
-  transition: background 0.3s ease;
-}
-
-.logoIcon {
-  font-size: 50px;
-  border-radius: 20px;
-  cursor: pointer;
-}
-
-.nameContainer {
-  display: flex;
-  align-items: center;
-}
-
-h4 {
-  margin-left: 15px;
-  flex: 0 0 auto;
-}
-
 .menu {
   display: flex;
   flex-direction: row;
-  margin-top: 8px;
-}
+  border-bottom: 1px solid #00000022;
+  padding: 10px 14%;
+  gap: 15px;
+  font-family: $font-default;
 
-.menuItem {
-  padding: 5px;
-  cursor: pointer;
-  margin-left: 10px;
-  transition: background-color 0.3s;
-}
+  h3 {
+    margin: auto 0px ;
+  }
 
-.menuItem:hover {
-  background-color: transparent;
-  border-radius: 30px;
-  padding: 3px;
-}
+  &__items_container {
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+  }
 
-.icon {
-  margin-right: 1px;
-}
 
-.text {
-  font-size: 16px;
-  font-weight: bold;
-  margin-left: 10px;
-}
+  .menuItem {
+    padding: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: 0.3s;
+  }
+
+  .logoIcon {
+    font-size: 50px;
+    color: rgba(0, 0, 0, 0.353);
+    cursor: pointer;
+    transition: 0.6s;
+  }
+  
+  
+  .logoIcon:hover {
+    color: rgb(0, 0, 0);
+    transition: 0.3s;
+  }
+  
+  
+  h4 {
+    margin-left: 15px;
+    flex: 0 0 auto;
+  }
+} 
+
+
+
+
+
