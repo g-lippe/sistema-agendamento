@@ -5,11 +5,28 @@
   flex-direction: row;
   border-bottom: 1px solid #00000022;
   padding: 10px 14%;
-  gap: 15px;
   font-family: $font-default;
 
-  h3 {
-    margin: auto 0px ;
+  &__logo_container {
+    display: flex;
+    flex-direction: row;
+    color: rgba(0, 0, 0, 0.353);
+    transition: 0.3s;
+    gap: 6px;
+    cursor: pointer;
+
+    .logoIcon {
+      font-size: 50px;
+    }
+
+    h3 {
+      margin: auto 0px;
+    }
+  }
+
+  &__logo_container:hover {
+    color: #000;
+    gap: 10px;
   }
 
   &__items_container {
@@ -18,35 +35,11 @@
     margin-left: auto;
   }
 
-
   .menuItem {
     padding: 5px;
     cursor: pointer;
-    margin-left: 10px;
+    margin-left: 12px;
     transition: 0.3s;
   }
 
-  .logoIcon {
-    font-size: 50px;
-    color: rgba(0, 0, 0, 0.353);
-    cursor: pointer;
-    transition: 0.6s;
-  }
-  
-  
-  .logoIcon:hover {
-    color: rgb(0, 0, 0);
-    transition: 0.3s;
-  }
-  
-  
-  h4 {
-    margin-left: 15px;
-    flex: 0 0 auto;
-  }
-} 
-
-
-
-
-
+}

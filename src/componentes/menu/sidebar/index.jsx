@@ -7,8 +7,10 @@ const Sidebar = () => {
 
     <div className={styles.menu}>
 
-      <GiSittingDog className={styles.logoIcon} />
-      <h3>Datapet</h3>
+      <div className={styles.menu__logo_container}>
+        <GiSittingDog className={styles.logoIcon} />
+        <h3>Datapet</h3>
+      </div>
       <div className={styles.menu__items_container}>
 
         <div className={styles.menuItem}>
@@ -31,7 +33,6 @@ const Sidebar = () => {
             to="/settings"
           />
         </div>
-
 
       </div>
     </div>
