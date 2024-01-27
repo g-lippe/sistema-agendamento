@@ -9,7 +9,7 @@ const Sidebar = () => {
 
       <div className={styles.menu__logo_container}>
         <GiSittingDog className={styles.logoIcon} />
-        <h3>Datapet</h3>
+        <h3>DataPet</h3>
       </div>
       <div className={styles.menu__items_container}>
 
