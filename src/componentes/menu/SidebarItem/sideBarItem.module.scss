@@ -5,20 +5,22 @@
   align-items: center;
   padding: 8px;
   cursor: pointer;
-  transition: background-color 0.5s;
 }
 
-.Icon-container:hover {
-  background-color: #0aaadb;
-  border-radius: 10px;
-}
-
-.icon {
-  margin-right: 1px;
-}
 
 .text {
   font-size: 15px;
   margin-left: 5px;
-  color: white;
+}
+
+.link {
+  color: #000;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+
+.link:hover {
+  color: #0000006c;
+  transition: 0.2s;
 }
