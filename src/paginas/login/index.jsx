@@ -5,7 +5,7 @@ export default function TelaLogin() {
   return (
     <div>
       <Sidebar />
-      <div className={styles.cont_principal}>
+      <div className={styles.cont_principal + ' animation_fade_in'}>
         <h2>Faça login no DataPet</h2>
         <div className={styles.cont_inputs}>
           <label htmlFor="">Endereço de email</label>

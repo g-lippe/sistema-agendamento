@@ -9,16 +9,31 @@
   font-family: $font-default;
 }
 
+// Animations
 .hover_shadow {
   transition: 0.4s;
   box-shadow: 0px 0px #000000b1;
+
+  &:hover {
+    transform: translate(-5px, -5px);
+    transition: 0.1s;
+    box-shadow: 5px 5px 3px #000000b1;
+  }
 }
 
-.hover_shadow:hover {
-  transform: translate(-5px, -5px);
-  transition: 0.1s;
-  box-shadow: 5px 5px 3px #000000b1;
+.animation_fade_in {
+  animation-duration: 0.4s;
+  animation-name: animate_fade;
+  animation-timing-function: ease;
+  animation-fill-mode: backwards;
 }
+@keyframes animate_fade {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+
+
 
 // Estilização da barra de scroll
 ::-webkit-scrollbar {
@@ -32,6 +47,8 @@
 }
 
 
+
+// Typefaces
 @font-face {
   font-family: "PoppinsRegular";
   src: local("PoppinsRegular"),

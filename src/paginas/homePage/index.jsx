@@ -8,7 +8,7 @@ export default function HomePage() {
     <>
       <main>
         <Menu />
-        <div className="pagina_centro">
+        <div className="pagina_centro animation_fade_in">
           <header></header>
 
           <Hero />
