@@ -1,4 +1,4 @@
-import { Link, NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import SidebarItem from "../SidebarItem";
 import styles from "./sideBar.module.scss";
 import { GiSittingDog } from "react-icons/gi";
@@ -13,9 +13,6 @@ const Sidebar = () => {
         </Link>
       </div>
       <div className={styles.menu__items_container}>
-        <div className={styles.menuItem}>
-          <SidebarItem iconType="início" text="Início" to="/" />
-        </div>
         <div className={styles.menuItem}>
           <SidebarItem iconType="usuário" text="Usuário" to="/login" />
         </div>
